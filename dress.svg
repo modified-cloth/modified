@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" role="img" aria-labelledby="title desc">
+  <title id="title">Yellow dress from the Modified. poster</title>
+  <desc id="desc">A hand-drawn bright yellow dress with black sketch outlines and a waist bow.</desc>
+  <g fill="#f5f500" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- straps -->
+    <path fill="none" d="M94 47 C84 20 89 4 97 5 C105 6 105 25 100 52"/>
+    <path fill="none" d="M205 47 C211 21 217 3 225 5 C233 7 230 29 219 53"/>
+    <!-- bodice -->
+    <path d="M96 48 L151 108 L205 48 L219 132 C205 145 185 151 151 151 C119 151 99 144 82 132 Z"/>
+    <!-- skirt -->
+    <path d="M82 132 C62 169 43 222 20 286 C8 320 3 346 4 355 C24 364 43 362 62 354 C45 368 55 378 82 383 C105 387 127 391 148 399 C164 406 178 403 187 394 C201 382 216 383 234 381 C259 378 277 369 290 354 C281 318 264 278 249 238 C235 201 224 166 219 132 C203 146 183 151 151 151 C119 151 99 145 82 132 Z"/>
+    <!-- waist bow -->
+    <path d="M151 140 C169 126 190 127 209 139 C201 151 189 159 169 159 C181 170 187 181 185 192 C168 183 158 171 151 158 C143 171 130 180 114 184 C117 172 126 160 137 153 C116 153 99 148 87 140 C107 129 129 130 151 140 Z"/>
+  </g>
+  <!-- hand-drawn sketch details -->
+  <g fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round">
+    <path d="M99 57 C112 82 128 105 151 132"/>
+    <path d="M202 57 C186 79 169 104 151 132"/>
+    <path d="M104 101 C121 111 134 120 151 134"/>
+    <path d="M194 101 C178 112 166 121 151 134"/>
+    <path d="M83 155 C68 206 47 258 24 317"/>
+    <path d="M112 157 C99 225 86 286 72 351"/>
+    <path d="M145 158 C137 220 127 284 117 369"/>
+    <path d="M163 159 C174 217 182 276 184 360"/>
+    <path d="M184 158 C204 216 224 276 245 348"/>
+    <path d="M219 157 C236 216 256 283 272 346"/>
+    <path d="M12 354 C30 348 46 347 62 354"/>
+    <path d="M62 354 C51 360 42 363 27 364"/>
+    <path d="M201 381 C216 372 230 369 246 371"/>
+    <path d="M151 141 C154 147 154 154 151 160"/>
+  </g>
+</svg>
