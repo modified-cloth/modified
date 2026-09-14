@@ -18,6 +18,7 @@
     }
 
     body {
+      position: relative;
       display: grid;
       place-items: center;
       min-height: 100vh;
@@ -25,14 +26,34 @@
       overflow: hidden;
     }
 
+    .dress {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: min(18vw, 180px);
+      height: auto;
+      z-index: 2;
+      pointer-events: none;
+    }
+
     .logo {
       width: min(58vw, 620px);
       height: auto;
       display: block;
     }
+
+    @media (max-width: 600px) {
+      .dress {
+        top: 14px;
+        left: 14px;
+        width: 105px;
+      }
+    }
   </style>
 </head>
 <body>
+  <img class="dress" src="dress.svg" alt="Yellow dress from the Modified. poster">
+
   <svg class="logo" viewBox="0 0 620 150" role="img" aria-label="Modified.">
     <text x="310" y="108"
           text-anchor="middle"
