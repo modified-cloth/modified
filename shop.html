@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f500">
+<title>Shop — Modified.</title>
+<style>
+:root{--yellow:#f5f500;--black:#101010}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--yellow);color:var(--black);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px clamp(18px,5vw,64px);border-bottom:2px solid var(--black)}.wordmark{font-size:clamp(27px,3vw,38px);font-weight:900;font-style:italic;letter-spacing:-2px}.nav-actions{display:flex;gap:10px;align-items:center}.pill{border:2px solid var(--black);background:transparent;padding:10px 15px;font-weight:800;cursor:pointer}.page{min-height:calc(100vh - 78px);padding:clamp(45px,9vw,115px) clamp(20px,8vw,110px);display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.copy h1{font-size:clamp(70px,13vw,175px);line-height:.78;letter-spacing:-.09em;margin:28px 0 30px}.copy p{font-size:clamp(18px,2.1vw,23px);line-height:1.5;max-width:540px}.btn{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--yellow);border:2px solid var(--black);padding:14px 18px;font-weight:900;margin-top:20px}.art{display:flex;align-items:center;justify-content:center;min-height:340px;border:2px solid var(--black);padding:clamp(24px,5vw,55px);position:relative}.art:before{content:"";position:absolute;inset:13px;border:1px solid var(--black);pointer-events:none}.art img{width:min(100%,300px);height:auto;position:relative}.stamp{position:absolute;right:20px;top:20px;border:2px solid var(--black);border-radius:50%;width:94px;height:94px;display:grid;place-items:center;text-align:center;font-size:12px;line-height:1.15;font-weight:900;transform:rotate(10deg);background:var(--yellow)}.bottom{display:flex;justify-content:space-between;gap:20px;padding:20px clamp(20px,5vw,64px);border-top:2px solid var(--black);font-size:12px;font-weight:800}@media(max-width:760px){.page{grid-template-columns:1fr;gap:20px}.copy h1{font-size:clamp(72px,18vw,125px)}.art{min-height:260px}.art img{width:190px}.bottom{flex-direction:column}.stamp{width:78px;height:78px;font-size:10px}}
+</style>
+</head>
+<body>
+<header class="topbar"><a class="wordmark" href="index.html" aria-label="Modified home">Modified.</a><div class="nav-actions"><button class="pill" id="languageToggle" aria-label="Switch language">EN</button><a class="pill" href="index.html#shop" data-i18n="back">← Zurück zur Hauptseite</a></div></header>
+<main class="page"><div class="copy"><div class="eyebrow" data-i18n="eyebrow">MODIFIED. / SHOP</div><h1 data-i18n="title">COMING<br>SOON.</h1><p data-i18n="text">Wir bereiten gerade unsere ersten upgecycelten Stücke vor. Bald findest du hier Kleidung mit neuem Design und einer neuen Geschichte.</p><a class="btn" href="index.html#contact"><span data-i18n="contact">Bleib in Kontakt</span> ↗</a></div><div class="art"><img src="dress.svg" alt="Handgezeichnetes gelbes Kleid"><div class="stamp" data-i18n="stamp">NEW<br>STORIES<br>SOON</div></div></main>
+<footer class="bottom"><span>Modified.</span><span data-i18n="footer">Kleidung bekommt ein neues Leben.</span><a href="index.html" data-i18n="home">Zur Hauptseite ↗</a></footer>
+<script>
+const copy={de:{back:"← Zurück zur Hauptseite",eyebrow:"MODIFIED. / SHOP",title:"COMING<br>SOON.",text:"Wir bereiten gerade unsere ersten upgecycelten Stücke vor. Bald findest du hier Kleidung mit neuem Design und einer neuen Geschichte.",contact:"Bleib in Kontakt",stamp:"NEW<br>STORIES<br>SOON",footer:"Kleidung bekommt ein neues Leben.",home:"Zur Hauptseite ↗"},en:{back:"← Back to main page",eyebrow:"MODIFIED. / SHOP",title:"COMING<br>SOON.",text:"We’re preparing our first upcycled pieces. Soon, you’ll find redesigned clothing with a story of its own right here.",contact:"Stay in touch",stamp:"NEW<br>STORIES<br>SOON",footer:"Giving clothes a new life.",home:"Back to main page ↗"}};
+let lang="de";document.getElementById("languageToggle").addEventListener("click",()=>{lang=lang==="de"?"en":"de";document.documentElement.lang=lang;document.getElementById("languageToggle").textContent=lang==="de"?"EN":"DE";document.querySelectorAll("[data-i18n]").forEach(el=>el.innerHTML=copy[lang][el.dataset.i18n])});
+</script>
+</body>
+</html>
